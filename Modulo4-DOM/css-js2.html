@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="testes">
+        <div class="inside-testes">Texto</div>
+    </div>
+    <div class="testes">
+        <div class="inside-testes">Texto2</div>
+    </div>
+    <script>
+        var els = document.querySelectorAll('.testes')
+        els[0].innerHTML = '<div class="inside-testes-via-js">oi</div>'
+    </script>
+</body>
+</html>
