@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        // Template strings
+
+        var nome = 'Guilherme'
+        var conteudo = `O nome é ${nome}`
+        console.log(conteudo)
+
+        // Block scopes
+
+        {
+            //Vai ficar definido apenas neste scopo
+            let nome = 'Guilherme'
+
+            let testes = function () {
+                console.log('Olá')
+            }
+
+            testes()
+        }
+
+        // Arrow functions
+
+        const testes = (texto, par) => {
+            par(texto)
+        }
+
+        testes('Olá mundo!',(texto) => {
+            alert(texto)
+        })
+
+        // Destructure
+
+        const arr = ['Guilherme', 'João', 'Filipe', 'Zezinho', 'Leo', 'Juliana']
+
+        const [a,b,...c] = arr
+
+        alert(c[0])
+
+        */
+
+        // Spread
+
+        var nomes = [
+            {
+                nome: 'João'
+            },
+            {
+                nome: 'Filipe'
+            }
+        ]
+
+        const objetos = [...nomes,{
+            nome: 'Guilerme'
+        }]
+        
+        console.log(objetos)
+
+        // Rest
+
+        function testes(...numero) {
+            console.log(numero[0][0])
+        }
+
+        testes([1,2,3,4,5])
+        </script>
+</body>
+</html>
